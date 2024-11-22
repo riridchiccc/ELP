@@ -1,0 +1,97 @@
+/* Login Page Styles */
+
+.login-box{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 120px 0px;
+      justify-content: center;
+      padding-top: 10%;
+      padding-left: 40%;
+  }
+  
+  .login-container {
+    display: flex;
+      width: 100%;
+      max-width: 400px;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      align-self: center;
+      align-items: center;
+    }
+    
+    h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #1a2e44;
+    }
+    
+    input {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    
+    input[type="email"], input[type="password"] {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    input:focus {
+      border-color: #000000;
+      outline: none;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #223448;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+      background-color: #354e5d;
+    }
+    
+    p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #666;
+    }
+    
+    a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: 600;
+      font-family:'Montserrat', sans-serif;
+    }
+    
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Global Background Image for the whole page */
+body {
+    background-image: url('../images/Downpic.cc-1809954316.jpg');
+    background-size: 60%;   /* Cover the entire screen */
+    background-position: left center;  /* Center the image */
+    background-repeat: no-repeat;  /* Prevent the image from repeating */
+    height: 100vh;  /* Ensure it covers the full viewport height */
+    margin: 0;  /* Remove default margin */
+    padding-bottom: 20px;
+
+  }
