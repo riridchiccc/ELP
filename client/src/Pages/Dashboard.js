@@ -15,8 +15,8 @@ const Dashboard = () => {
   
   <ProtectedRoute>
     <div className='dashboard-container'>
-      <h1>Welcome to your Dashboard</h1>
-      <p> your email: {user.email}</p>
+      <h2> Welcome, {user.email}</h2>
+      
     </div>
     </ProtectedRoute>
   );

@@ -17,7 +17,7 @@ function Login() {
       console.log('Login successful');
       navigate('/dashboard'); // Redirect to Dashboard after successful login
     } catch (error) {
-      console.error('Error logging in:', error.message);
+      alert('Error logging in:', error.message);
     }
   };
 

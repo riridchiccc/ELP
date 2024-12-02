@@ -6,8 +6,6 @@
       align-items: center;
       margin: 120px 0px;
       justify-content: center;
-      padding-top: 10%;
-      padding-left: 40%;
   }
   
   .login-container {
@@ -86,12 +84,13 @@
 
     /* Global Background Image for the whole page */
 body {
-    background-image: url('../images/Downpic.cc-1809954316.jpg');
-    background-size: 60%;   /* Cover the entire screen */
+    background-size: contain;   /* Cover the entire screen */
     background-position: left center;  /* Center the image */
     background-repeat: no-repeat;  /* Prevent the image from repeating */
     height: 100vh;  /* Ensure it covers the full viewport height */
     margin: 0;  /* Remove default margin */
     padding-bottom: 20px;
+    background-color: #ddd;
+    width: 100%;
 
   }

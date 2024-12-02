@@ -1,8 +1,8 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { auth } from '../services/firebase'; 
-import Logo from '../images/logo.png';
-import './Navbar.css'
+import { auth } from "../services/firebase";
+import Logo from "../images/logo.png";
+import "./Navbar.css";
 
 function Navbar({ isAuthenticated, setIsAuthenticated }) {
   const navigate = useNavigate();
@@ -20,18 +20,18 @@ function Navbar({ isAuthenticated, setIsAuthenticated }) {
   return (
     <nav className="navbar ">
       <div className="navbar-container">
-      <div className="navbar-logo">
-        <img src= {Logo} alt="logo"></img> </div>
-        <ul
-       
-         className="nav-menu">
-          <li>
-             <Link to="/" className="nav-link">
-                  Home
-              </Link>
-              </li>
+        <div className="navbar-logo">
+          <img src={Logo} alt="logo"></img>{" "}
+        </div>
+        <ul className="nav-menu">
           {!isAuthenticated ? (
             <>
+              <li>
+                <Link to="/" className="nav-link">
+                  Home
+                </Link>
+              </li>
+
               <li>
                 <Link to="/login" className="nav-link">
                   Login
@@ -50,12 +50,27 @@ function Navbar({ isAuthenticated, setIsAuthenticated }) {
                   Dashboard
                 </Link>
               </li>
+              <li>
+                <Link to="/about" className="nav-link">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="nav-link">
+                  Contact
+                </Link>
+              </li>
               <li className="dropdown">
                 <button className="nav-link">Courses</button>
                 <div className="dropdown-content">
-                  <Link to="/courses/1">C Program</Link>
-                  <Link to="/courses/2">Javascript</Link>
-                  <Link to="/courses/3">Python</Link>
+                  <Link to="/time-management">Time Management</Link>
+                  <Link to="/communication-skills">Communication Skills</Link>
+                  <Link to="/emotional-intelligence">
+                    Emotional Intelligence
+                  </Link>
+                  <Link to="/leadership">Leadership</Link>
+                  <Link to="/productivity">Productivity</Link>
+                  <Link to="/conflict-resolution">Conflict Resolution</Link>
                 </div>
               </li>
               <li>
@@ -65,9 +80,8 @@ function Navbar({ isAuthenticated, setIsAuthenticated }) {
               </li>
             </>
           )}
-        </ul>       
+        </ul>
       </div>
-   
     </nav>
   );
 }

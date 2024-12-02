@@ -84,7 +84,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #274263;
+    background-color: #fff;
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -101,15 +101,16 @@
   }
   
   .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #e1e0e0;
   }
   
   /* Show dropdown on hover */
   .dropdown:hover .dropdown-content {
+    margin-top: 1px;
     display: block;
   }
   
   .dropdown:hover .nav-link {
-    background-color: #2980b9;
+    background-color:  #214b66;;
     border-radius: 5px;
   }

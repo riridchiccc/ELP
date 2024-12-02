@@ -34,7 +34,13 @@ import Login from './Pages/Login';
 import './global.css'
 import { auth } from './services/firebase';
 import Home from './Pages/Home';
-
+// courses section import
+import TimeManagement from './components/TimeManagement';
+import CommunicationSkills from './components/CommunicationSkills';
+import EmotionalIntelligence from './components/EmotionalIntelligence';
+import Leadership from './components/Leadership';
+import Productivity from './components/Productivity';
+import ConflictResolution from './components/ConflictResolution';
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
@@ -59,6 +65,12 @@ function App() {
         <Route path="/signup" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={isAuthenticated ? <Dashboard /> : <Login />} />
+        <Route path="/time-management" element={<TimeManagement />} />
+        <Route path="/communication-skills" element={<CommunicationSkills />} />
+        <Route path="/emotional-intelligence" element={<EmotionalIntelligence />} />
+        <Route path="/leadership" element={<Leadership />} />
+        <Route path="/productivity" element={<Productivity />} />
+        <Route path="/conflict-resolution" element={<ConflictResolution />} />
       </Routes>
     </Router>
   );
